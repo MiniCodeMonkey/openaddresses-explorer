@@ -1,0 +1,13 @@
+# Credits: https://github.com/sculpin/sculpin-blog-skeleton/blob/master/s3-publish.sh
+
+# Path to s3cmd configuration file for your Amazon S3 bucket
+S3_CONFIG=./.s3/s3cmd.conf
+
+# Delete files from S3 bucket that doesn't exist locally
+S3_DELETE=false
+
+# Region for S3. Set to Oregon by default, because Oregon S3 has special read-after-write consistency.
+S3_REGION=us-west-2
+
+# The name of your S3 bucket
+S3_BUCKET=www.mydomain.com
