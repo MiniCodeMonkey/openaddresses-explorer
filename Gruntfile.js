@@ -64,12 +64,14 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'website/js/scripts.js': [
-            'assets/js/*.js'
+            'assets/js/vendor/*.js',
+            'assets/js/*.js',
           ]
         }
       },
       options: {
-        beautify: false
+        beautify: false,
+        mangle: false
       }
     },
     watch: {
